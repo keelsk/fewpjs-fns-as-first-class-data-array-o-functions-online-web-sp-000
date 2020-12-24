@@ -27,6 +27,7 @@ let routine = [wakeDog(dogName, dogBreed),leashDog(dogName, dogBreed), walkToPar
 function exercise(dogName, dogBreed){
   let routineResults = [];
   for (let i = 0; i < routine.length; i++) {
-    routine[i].push(); 
+    routineResults.push(routine[i]); 
   }
+  return routineResults;
 }
